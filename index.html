@@ -11,10 +11,12 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
 
       <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
+      <link rel="stylesheet" href="swiper-bundle.min.css">
 
       <!--=============== CSS ===============-->
       <link rel="stylesheet" href="syles.css">
+
+
 
       <title>Responsive pizza website - Bedimcode</title>
    </head>
@@ -41,6 +43,7 @@
                 <li>
                     <a href="#products" class="nav_link">Product</a>
                 </li>
+          
                 <li>
                     <a href="#contact" class="nav_link">Contact</a>
                 </li>
@@ -78,9 +81,9 @@
                 <img src="img/sticker-pizza.svg" alt="image" class="home_sticker1">
                 <img src="img/sticker-leaf.svg" alt="image" class="home_sticker2">
                 </div>
-                <div class="home_iamges">
-                    <img src="img/home-pizza.png" alt="image" class="home_ingredient home_pizza">
-                    <img src="img/home-board.png" alt="image" class="home_ingredient home_board">
+                <div class="home_images">
+                    <img src="img/home-pizza.png" alt="image" class="home_pizza">
+                    <img src="img/home-board.png" alt="image" class="home_board">
                     <img src="img/home-leaf-1.png" alt="image" class="home_ingredient home_leaf1">
                     <img src="img/home-leaf-2.png" alt="image" class="home_ingredient home_leaf2">
                     <img src="img/home-pepperoni.png" alt="image" class="home_ingredient home_pepperoni">
@@ -93,12 +96,61 @@
 
          <!--==================== ABOUT ====================-->
          <section class="about section" id="about">
-            
+            <div class="about_container container grid">
+                <div class="about_data">
+                    <h2 class="section_title">Learn More About <br> Our History</h2>
+                    <p class="about_decription">
+                        The secret to success is the best ingredients
+                        to make a better pizza. Today we strive for 
+                        perfaction, just as we have doing for 15 years
+                        when we first opened the pizzeria in Lima - Peru
+                    </p>
+                    <a href="#popular" class="button">The Best Pizzas</a>
+                    <img src="img/sticker-cheese.svg" alt="image" class="about_sticker">
+                </div>
+                <img src="img/about-img.png" alt="image" class="about_img">
+            </div>
          </section>
 
          <!--==================== POPULAR ====================-->
          <section class="popular section" id="popular">
-            
+            <div class="popular_container container grid">
+                <div class="popular_data">
+                    <h2 class="section_title">Discover <br> Popular Orders</h2>
+                    <p class="popular_description">
+                        Select the best propared and delicious flavors.
+                        We have collected some popular recipes from around
+                        the world for you to choose your favorite.
+                    </p>
+               
+                </div>
+                
+                <div class="popular_swiper swiper">
+                   
+                    <img src="img/popular-dish.png" alt="image" class="popular_dish">
+                    <div class="swiper-wrapper">
+                        <article class="popular_card swiper-slide">
+                            <img src="img/popular-1.png" alt="image" class="popular_img">
+                            <h3 class="popular_title">
+                                Margherita Pizza
+                            </h3>
+                        </article>
+                        <article class="popular_card swiper-slide">
+                            <img src="img/popular-2.png" alt="image" class="popular_img">
+                            <h3 class="popular_title">
+                                Mushroom Pizza
+                            </h3>
+                        </article>
+                        <article class="popular_card swiper-slide">
+                            <img src="img/popular-3.png" alt="image" class="popular_img">
+                            <h3 class="popular_title">
+                                Pepperoni Pizza
+                            </h3>
+                        </article>
+                    </div>
+                
+                </div>
+            </div>
          </section>
 
          <!--==================== RECIPE ====================-->
@@ -129,8 +181,7 @@
       <script src=""></script>
       
       <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
-
+      <script src="swiper-bundle.min.js"></script>
       <!--=============== MAIN JS ===============-->
       <script src="main.js"></script>
    </body>

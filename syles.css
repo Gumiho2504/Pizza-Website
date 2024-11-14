@@ -230,6 +230,9 @@ img {
 }
 /* Add shadow header */
 
+.shadow-header{
+  box-shadow: 0 4px 16px hsla(353, 100%, 8%, .1);
+}
 
 /* Active link */
 
@@ -265,8 +268,59 @@ img {
     left: 2.5rem;
     bottom: -4.5rem;
 }
+.home_images{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+.home_ingredient{
+  width: 60px;
+  filter: var(--shadow-small-img);
+  position: absolute;
+  z-index: 2;
+
+}
+.home_board,.home_pizza{
+  filter: var(--shadow-big-img);
+}
+.home_pizza{
+  width: 300px;
+  z-index: 2;
+}
+.home_board{
+  width: 300px;
+  position: absolute;
+  bottom: -.5rem;
+  left: -.15rem;
+}
+.home_leaf1{
+  top: -1rem
+}
+.home_pepperoni{
+  right: -.5rem;
+  top: 2rem;
+}
+.home_mushroom{
+  right: -.5rem;
+  bottom: 2rem;
+}
+.home_olive{
+  bottom: -1rem;
+
+}
+.home_leaf2{
+  left: -.5rem ;
+  bottom: 2rem;
+}
+.home_tomato{
+  left: -.5rem;
+  top: 2rem;
+}
 
 /*=============== BUTTON ===============*/
+
 .button{
     display: inline-flex;
     justify-content: center;
@@ -283,13 +337,96 @@ img {
 
 /*=============== ABOUT ===============*/
 
+.about{
+  background-color: var(--container-color);
+}
+.about_container{
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+.about_data{
+  position: relative;
+  text-align: center;
+}
+.about_data .section_title{
+  margin-bottom: 1rem;
+}
+.about_decription{
+ margin-bottom: 2rem;
+}
+.about_sticker{
+  width: 40px;
+  position: absolute;
+  right: 0rem;
+  bottom: 2rem;
+}
+.about_img{
+  width: 320px;
+  justify-self: center;
+  filter: var(--shadow-big-img);
+}
 
 /*=============== POPULAR ===============*/
+.popular_container{
+  grid-template-columns: 100%;
+  row-gap: 3rem;
+  padding-bottom: 2rem;
+}
+
+.popular_data .section_title{
+  margin-bottom: 1rem;
+}
+.section_title{
+  text-align: center;
+}
+
+.popular_description{
+  text-align: center;
+}
+
+.popular_swiper{
+  position: relative;
+}
+.popular_dish{
+  width: 220px;
+  filter: var(--shadow-big-img);
+  position: absolute;
+  inset: 0;
+  top: -.7rem;
+  margin-inline: auto;
+}
+.popular_card,
+.popular_img{
+  width: 200px;
+}
+.popular_img{
+  transform: scale(.8) rotate(-90deg);
+  transition: transform .4s;
+  
+}
+.popular_title{
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  margin-top: 2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
 
 
 /* Swiper class */
 
+.popular_swiper{
+  margin-inline: inherit;
+  overflow: visible;
+}
 
+:is(.swiper-slide-active,.swiper-slide-duplicate-active) .popular_img{
+  transform: scale(1) rotate(0);
+}
+:is(.swiper-slide-active,.swiper-slide-duplicate-active) .popular_title{
+  opacity: 1;
+}
 
 /*=============== RECIPE ===============*/
 
